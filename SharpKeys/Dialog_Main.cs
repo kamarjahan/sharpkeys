@@ -19,7 +19,7 @@ namespace SharpKeys
         private Rectangle m_rcWindow;
 
         // Field for registy storage
-        private string m_strRegKey = "Software\\RandyRants\\SharpKeys";
+        private string m_strRegKey = "Software\\kamarjahan\\km key stucker";
 
         // Hashtable for tracking text to scan codes
         private Hashtable m_hashKeys = null;
@@ -291,7 +291,7 @@ namespace SharpKeys
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(522, 25);
             this.label1.TabIndex = 9;
-            this.label1.Text = "SharpKeys 3.9.4 - Copyright 2004 - 2022 RandyRants.com";
+            this.label1.Text = "km key stucker 3.9.4 - Copyright 2004 - 2022 kamarjahan.com";
             // 
             // label2
             // 
@@ -318,7 +318,7 @@ namespace SharpKeys
             this.urlMain.Size = new System.Drawing.Size(249, 25);
             this.urlMain.TabIndex = 12;
             this.urlMain.TabStop = true;
-            this.urlMain.Text = "http://www.randyrants.com/";
+            this.urlMain.Text = "http://www.kamarjahan.com/";
             this.urlMain.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.urlMain.VisitedLinkColor = System.Drawing.SystemColors.HotTrack;
             this.urlMain.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.urlMain_LinkClicked);
@@ -403,7 +403,7 @@ namespace SharpKeys
             this.displayProduct.Name = "displayProduct";
             this.displayProduct.Size = new System.Drawing.Size(1075, 42);
             this.displayProduct.TabIndex = 1;
-            this.displayProduct.Text = "SharpKeys";
+            this.displayProduct.Text = "km key stucker";
             this.displayProduct.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // urlCode
@@ -418,7 +418,7 @@ namespace SharpKeys
             this.urlCode.Size = new System.Drawing.Size(367, 25);
             this.urlCode.TabIndex = 11;
             this.urlCode.TabStop = true;
-            this.urlCode.Text = "https://github.com/randyrants/sharpkeys/";
+            this.urlCode.Text = "https://github.com/kamarjahan/sharpkeys/";
             this.urlCode.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.urlCode.VisitedLinkColor = System.Drawing.SystemColors.HotTrack;
             this.urlCode.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.urlMain_LinkClicked);
@@ -481,7 +481,7 @@ namespace SharpKeys
 
             if (nWarning == 0)
             {
-                MessageBox.Show("Welcome to SharpKeys!\n\nThis application will add one key to your registry that allows you\nto change how certain keys on your keyboard will work.\n\nYou must be running Windows 2000 through Windows 11 for this to be supported and you'll be using SharpKeys at your own risk!\n\nEnjoy!\nRandyRants.com", "SharpKeys");
+                MessageBox.Show("Welcome to km key stucker!\n\nThis application will add one key to your registry that allows you\nto change how certain keys on your keyboard will work.\n\nYou must be running Windows 2000 through Windows 11 for this to be supported and you'll be using SharpKeys at your own risk!\n\nEnjoy!\nRandyRants.com", "SharpKeys");
             }
 
             // Set the WinPos
@@ -571,7 +571,7 @@ namespace SharpKeys
             m_bDirty = false;
             Cursor = Cursors.Default;
 
-            MessageBox.Show("Key Mappings have been successfully stored to the registry.\n\nPlease logout or reboot for these changes to take effect!", "SharpKeys");
+            MessageBox.Show("Key Mappings have been successfully stored to the registry.\n\nPlease logout or reboot for these changes to take effect!", "km key stucker");
         }
 
         private byte[] DefineScancodeMap()
@@ -632,7 +632,7 @@ namespace SharpKeys
             // max out the mapping at 104
             if (lvKeys.Items.Count >= 104)
             {
-                MessageBox.Show("The maximum number of mappings SharpKeys supports is 16.\n\nPlease delete an existing mapping before adding a new one!", "SharpKeys");
+                MessageBox.Show("The maximum number of mappings km key stucker supports is 16.\n\nPlease delete an existing mapping before adding a new one!", "km key stucker");
                 return;
             }
 
@@ -666,7 +666,7 @@ namespace SharpKeys
             dlg.lbTo.Sorted = true;
 
             // UI stuff
-            dlg.Text = "SharpKeys: Add New Key Mapping";
+            dlg.Text = "km key stucker: Add New Key Mapping";
             dlg.lbFrom.SelectedIndex = 0;
             dlg.lbTo.SelectedIndex = 0;
             if (dlg.ShowDialog() == DialogResult.OK)
@@ -686,7 +686,7 @@ namespace SharpKeys
             // make sure something was selecting
             if (lvKeys.SelectedItems.Count <= 0)
             {
-                MessageBox.Show("Please select a mapping to edit!", "SharpKeys");
+                MessageBox.Show("Please select a mapping to edit!", "km key stucker");
                 return;
             }
 
@@ -736,7 +736,7 @@ namespace SharpKeys
             else
                 dlg.lbTo.SelectedIndex = 0;
 
-            dlg.Text = "SharpKeys: Edit Key Mapping";
+            dlg.Text = "km key stucker: Edit Key Mapping";
             if (dlg.ShowDialog() == DialogResult.OK)
             {
                 m_bDirty = true;
@@ -753,7 +753,7 @@ namespace SharpKeys
             // Pop a mapping out of the list view
             if (lvKeys.SelectedItems.Count <= 0)
             {
-                MessageBox.Show("Please select a mapping to remove!", "SharpKeys");
+                MessageBox.Show("Please select a mapping to remove!", "km key stucker");
                 return;
             }
 
@@ -765,7 +765,7 @@ namespace SharpKeys
         private void DeleteAllMapping()
         {
             // Since removing all is a big step, get a confirmation
-            DialogResult dlgRes = MessageBox.Show("Deleting all will clear this list of key mapping but your registry will not be updated until you click \"Write to Registry\".\n\nDo you want to clear this list of key mappings?", "SharpKeys", MessageBoxButtons.YesNo, MessageBoxIcon.Stop, MessageBoxDefaultButton.Button2);
+            DialogResult dlgRes = MessageBox.Show("Deleting all will clear this list of key mapping but your registry will not be updated until you click \"Write to Registry\".\n\nDo you want to clear this list of key mappings?", "km key stucker", MessageBoxButtons.YesNo, MessageBoxIcon.Stop, MessageBoxDefaultButton.Button2);
             if (dlgRes == DialogResult.No)
             {
                 return;
@@ -812,12 +812,12 @@ namespace SharpKeys
                 }
                 catch
                 {
-                    MessageBox.Show("The file you are trying to load is not a valid SKL file!", "SharpKeys");
+                    MessageBox.Show("The file you are trying to load is not a valid SKL file!", "km key stucker");
                 }
             }
             else
             {
-                MessageBox.Show("You've tried to open a file that is empty!", "SharpKeys");
+                MessageBox.Show("You've tried to open a file that is empty!", "km key stucker");
             }
         }
 
@@ -825,11 +825,11 @@ namespace SharpKeys
         {
             if (lvKeys.Items.Count <= 0)
             {
-                MessageBox.Show("There are no remapped keys to save to a file!", "SharpKeys");
+                MessageBox.Show("There are no remapped keys to save to a file!", "km key stucker");
             }
             SaveFileDialog saveDialog = new SaveFileDialog();
-            saveDialog.Filter = "SharpKeys key list (*.skl)|*.SKL";
-            saveDialog.Title = "Save SharpKeys Key List";
+            saveDialog.Filter = "km key stucker key list (*.skl)|*.SKL";
+            saveDialog.Title = "Save km key stucker Key List";
             saveDialog.DefaultExt = "skl";
             saveDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             saveDialog.CheckPathExists = true;
@@ -1204,7 +1204,7 @@ namespace SharpKeys
             // if anything has been added, edit'd or delete'd, ask if a save to the registry should be performed
             if (m_bDirty)
             {
-                DialogResult dlgRes = MessageBox.Show("You have made changes to the list of key mappings.\n\nDo you want to update the registry now?", "SharpKeys", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Stop, MessageBoxDefaultButton.Button3);
+                DialogResult dlgRes = MessageBox.Show("You have made changes to the list of key mappings.\n\nDo you want to update the registry now?", "km key stucker", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Stop, MessageBoxDefaultButton.Button3);
                 if (dlgRes == DialogResult.Cancel)
                 {
                     e.Cancel = true;
