@@ -6,12 +6,12 @@ using System.Security.Permissions;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly: AssemblyTitle("SharpKeys")]
+[assembly: AssemblyTitle("km key stucker")]
 [assembly: AssemblyDescription("Registry hack for remapping keys")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("RandyRants.com")]
-[assembly: AssemblyProduct("SharpKeys")]
-[assembly: AssemblyCopyright("Copyright 2004 - 2022 RandyRants.com")]
+[assembly: AssemblyCompany("kamarjahan.ml")]
+[assembly: AssemblyProduct("km key stucker")]
+[assembly: AssemblyCopyright("Copyright 2004 - 2022 km key stucker")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]		
 
@@ -26,4 +26,4 @@ using System.Security.Permissions;
 // You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
 
-[assembly: AssemblyVersion("3.9.4.0")]
+[assembly: AssemblyVersion("3.9.4.1")]
