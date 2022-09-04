@@ -235,7 +235,7 @@ namespace SharpKeys
                 else
                 {
                     // probably an international keyboard code
-                    MessageBox.Show("You've entered a key that SharpKeys doesn't know about.\n\nPlease check the SharpKeys website for an updated release", "SharpKeys");
+                    MessageBox.Show("You've entered a key that km key stucker doesn't know about.\n\nPlease check the km key stucker website for an updated release", "km key stucker");
                 }
             }
         }
@@ -252,7 +252,7 @@ namespace SharpKeys
                 else
                 {
                     // probably an international keyboard code
-                    MessageBox.Show("You've entered a key that SharpKeys doesn't know about.\n\nPlease check the SharpKeys website for an updated release", "SharpKeys");
+                    MessageBox.Show("You've entered a key that km key stucker doesn't know about.\n\nPlease check the km key stucker website for an updated release", "km key stucker");
                 }
             }
         }
