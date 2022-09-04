@@ -3,7 +3,7 @@
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
   <assemblyIdentity version="3.0.0.0"
      processorArchitecture="X86"
-     name="SharpKeys"
+     name="km key stucker"
      type="win32"/>
 
   <description>SharpKeys</description>
